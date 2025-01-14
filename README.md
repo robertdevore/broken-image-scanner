@@ -33,15 +33,19 @@ The CSV file includes two columns:
 ## Frequently Asked Questions (FAQ)
 
 **What does this plugin scan?**
+
 The plugin scans all posts, pages, and public custom post types for `<img>` tags and checks if the image URLs are reachable.
 
 **What happens if the scan is interrupted?**
+
 You can restart the scan at any time. The plugin works in batches, so it won’t overload your server.
 
 **How does the plugin check for broken images?**
+
 It sends a `HEAD` request to each image URL and checks the HTTP response. If the response is not `200 OK`, the image is flagged as broken.
 
 **Can I edit posts directly from the scan results?**
+
 Yes, the table includes links to the WordPress editor for each affected post, making it easy to fix broken images.
 
 ## License
