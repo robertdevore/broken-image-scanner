@@ -1,0 +1,85 @@
+#wpcontent {
+    padding-left: 0;
+}
+
+.ebis-wrapper {
+    max-width: 1200px;
+    margin: 24px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ebis-wrapper h1 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.ebis-container {
+    text-align: center;
+    margin-top: 12px;
+}
+
+#start-scan {
+    float: right;
+    margin-left: 12px;
+}
+
+#progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+#progress {
+    height: 20px;
+    background: #007cba;
+    width: 0;
+}
+
+#scan-results {
+    text-align: left;
+}
+
+#scan-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Ensures consistent column sizing */
+}
+
+#scan-results th {
+    text-align: left;
+    background: #f4f4f4;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#scan-results td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#scan-results tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* First column: Fixed width */
+#scan-results td:first-child,
+#scan-results th:first-child {
+    width: 200px;
+    max-width: 200px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Second column: Fills remaining space */
+#scan-results td:nth-child(2),
+#scan-results th:nth-child(2) {
+    width: auto;
+    word-wrap: break-word;
+    white-space: normal;
+}
